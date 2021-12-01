@@ -1,0 +1,25 @@
+{
+  "name": "dreamdev.team",
+  "version": "0.0.1",
+  "description": "dreamdev.team website source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'no fuc*ing test yet'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dreamDevTeamx/website.git"
+  },
+  "keywords": [
+    "someshit"
+  ],
+  "author": "dreamdev.team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dreamDevTeamx/website/issues"
+  },
+  "homepage": "https://github.com/dreamDevTeamx/website#readme",
+  "devDependencies": {
+    "prettier": "^2.5.0"
+  }
+}
