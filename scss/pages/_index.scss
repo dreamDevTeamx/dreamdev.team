@@ -1,0 +1,114 @@
+._1_half_of_content {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+._1_half_of_content__txt {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.hello {
+  font-size: 45px;
+  flex-grow: 1;
+  margin-bottom: 33px;
+  margin-top: 13px;
+}
+.who_i {
+  font-size: 18px;
+  flex-grow: 1;
+  margin-bottom: 33px;
+}
+._2_half_of_content {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex: 1;
+  justify-content: space-between;
+}
+._2_half_of_content p {
+  line-height: 23px;
+  margin-top: 25px;
+}
+.social {
+  background-color: $primary-color;
+  margin-top: $margin-components;
+  padding: 25px 15px;
+}
+.txt_buttons {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.txt_buttons span {
+  margin-right: 5px;
+}
+.txt_buttons__gmail {
+  height: 15px;
+}
+.buttons_div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'noto_sansbold';
+  span {
+    font-family: inherit;
+  }
+  border: #4d4d4d dashed 1px;
+}
+.button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 7px 6px;
+  text-align: center;
+  border: #4d4d4d dashed 1px;
+  padding: 5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  background-color: #bebebe;
+  min-height: 100%;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: #cecece;
+}
+.button_img {
+  width: 45px;
+  height: 45px;
+}
+.button span {
+  display: inline-block;
+  margin-top: 4px;
+  font-family: 'noto_sansbold';
+}
+.square_button_img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.circle_button_img {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
