@@ -3,7 +3,9 @@ our main website
 
 Compile SCSS:  
 sass scss/:css/
-Fromat code with Prettier:
+
+
+Fromat code with Prettier:  
 npx prettier --write .
 
 
