@@ -2,7 +2,7 @@
   "name": "dreamdev.team",
   "version": "0.0.1",
   "description": "dreamdev.team website source",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo 'no fuc*ing test yet'"
   },
@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/dreamDevTeamx/website#readme",
   "devDependencies": {
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.1"
   }
 }
