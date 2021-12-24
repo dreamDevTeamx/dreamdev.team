@@ -1,15 +1,13 @@
-@import 'abstracts/variables';
-
 @import 'vendors/normalize';
 
 @import 'vendors-extensions/normalize';
 
+@import 'abstracts/variables';
+
+@import 'base/base';
 @import 'base/fonts';
 @import 'base/typography';
 
-@import 'layout/header';
-@import 'layout/footer';
-
-@import 'components/buttons';
-
 @import 'pages/index';
+@import 'pages/design';
+@import 'pages/react-course';

@@ -10,4 +10,5 @@ npx prettier --write .
 
 
 Dependencies:
+sass
 prettier

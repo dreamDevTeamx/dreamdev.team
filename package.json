@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/dreamDevTeamx/website#readme",
   "devDependencies": {
+    "sass": "^1.45.0",
     "prettier": "^2.5.1"
   }
 }
