@@ -387,41 +387,111 @@ ul li {
   list-style: none;
 }
 
-body {
-  padding: 8px;
+header {
+  border-bottom: 2px solid #808080;
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+main {
+  padding: 1em 0.5em;
+}
+
+.vanille-ul {
+  margin-left: 1.2em;
+}
+.vanille-ul li {
+  list-style-type: disc;
+}
+
+.indented-list {
+  margin-left: 1.2em;
+}
+.indented-list li {
+  margin: 0.2em 0;
+}
+
+.react-members-list li {
+  display: flex;
+  width: 20em;
+  justify-content: space-between;
+  border: 2px solid #747474;
+  padding: 0.3em;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1 {
   font-size: 2.3em;
+  margin: 0.7em 0;
 }
 
 h2 {
   font-size: 2em;
+  margin: 0.7em 0;
 }
 
 h3 {
   font-size: 1.8em;
+  margin: 0.6em 0;
 }
 
 h4 {
   font-size: 1.7em;
+  margin: 0.6em 0;
 }
 
 h5 {
   font-size: 1.6em;
+  margin: 0.5em 0;
 }
 
 h6 {
   font-size: 1.5em;
+  margin: 0.5em 0;
 }
 
 p {
-  margin-top: 14px;
+  margin-top: 1.2em;
+}
+
+a {
+  color: #204BA0;
+}
+
+a:hover {
+  color: #204BA0;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #204BA0;
+}
+
+a:active {
+  color: #204BA0;
+}
+
+a.link-to-main {
+  background-image: url("./../img/arrow-left.svg");
+  background-size: 1.1em;
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 1.2em;
+}
+
+a.link-disable {
+  color: #747474;
+  pointer-events: none;
+}
+a.link-disable:hover {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
