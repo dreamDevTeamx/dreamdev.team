@@ -416,7 +416,8 @@ main {
 
 .react-members-list li {
   display: flex;
-  width: 20em;
+  max-width: 20em;
+  width: 100%;
   justify-content: space-between;
   border: 2px solid #747474;
   padding: 0.3em;
