@@ -500,7 +500,7 @@ a:active {
 }
 
 a.link-to-main {
-  background-image: url('./../img/arrow-left.svg');
+  background-image: url('../img/arrow-left.svg');
   background-size: 1.1em;
   background-repeat: no-repeat;
   background-position: center left;

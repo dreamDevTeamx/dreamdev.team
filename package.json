@@ -2,7 +2,7 @@
   "name": "dreamdev.team",
   "version": "0.0.1",
   "description": "dreamdev.team website source",
-  "main": "html/index.html",
+  "main": "public/index.html",
   "scripts": {
     "test": "echo 'no fuc*ing test yet'"
   },
