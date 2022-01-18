@@ -5,7 +5,7 @@ Compile SCSS:
 sass scss/:css/
 
 
-Fromat code with Prettier:  
+Format code with Prettier:  
 npx prettier --write .
 
 
