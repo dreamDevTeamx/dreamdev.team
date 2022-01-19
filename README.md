@@ -2,7 +2,7 @@
 our main website
 
 Compile SCSS:  
-sass scss/:css/
+npx sass scss/:public/css/
 
 
 Format code with Prettier:  
