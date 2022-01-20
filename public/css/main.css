@@ -370,7 +370,7 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -410,15 +410,6 @@ ul li {
   -webkit-border-vertical-spacing: 0;
 }
 
-header {
-  border-bottom: 2px solid #808080;
-  min-height: 3.5em;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1em;
-}
-
 main {
   padding: 1em 0.5em;
 }
@@ -443,32 +434,32 @@ body {
 }
 
 h1 {
-  font-size: 2.3em;
-  margin: 0.7em 0;
+  font-size: 2.2em;
+  margin: 1em 0;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0.7em 0;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0.6em 0;
 }
 
 h4 {
-  font-size: 1.7em;
+  font-size: 1.2em;
   margin: 0.6em 0;
 }
 
 h5 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin: 0.5em 0;
 }
 
 h6 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.5em 0;
 }
 
@@ -509,6 +500,34 @@ a.link-disable:hover {
   text-decoration: none;
 }
 
+#ddtReactCourse {
+  margin-bottom: 0;
+}
+
+#ddtReactCourse + span {
+  color: #f0a71b;
+  background-color: #204ba0;
+  padding: 6px 5px;
+}
+
+.tag {
+  color: #204ba0;
+}
+
+.cross {
+  text-decoration: line-through;
+  text-decoration-color: red;
+}
+
+header {
+  border-bottom: 2px solid #808080;
+  min-height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
 .react-members-list li {
   display: flex;
   max-width: 20em;
@@ -521,17 +540,41 @@ a.link-disable:hover {
 .react-members {
   border-spacing: 0;
   border: 0.15em solid #747474;
-  max-width: 60em;
+  max-width: 65em;
   width: 100%;
   border-collapse: collapse;
 }
-.react-members td, .react-members th {
+.react-members td,
+.react-members th {
   padding: 0.4em;
   border-bottom: 0.05em solid #747474;
   border-right: 0.11em solid #747474;
 }
 .react-members th {
   border-top: 0.15em solid #747474;
+  text-align: center;
+}
+.react-members .inner-container-table-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyButton {
+  cursor: pointer;
+  margin-left: 0.2em;
+  padding: 0.2em;
+  background-color: #6bb2ff;
+  border-radius: 0.2em;
+  border-radius: 0.2em;
+  border-radius: 0.2em;
+}
+.copyButton:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+.copyButton:active {
+  background-color: #2990ff;
 }
 
 /*# sourceMappingURL=main.css.map */

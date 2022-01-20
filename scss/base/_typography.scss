@@ -4,32 +4,32 @@ body {
 }
 
 h1 {
-  font-size: 2.3em;
-  margin: 0.7em 0;
+  font-size: 2.2em;
+  margin: 1em 0;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0.7em 0;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 0.6em 0;
 }
 
 h4 {
-  font-size: 1.7em;
+  font-size: 1.2em;
   margin: 0.6em 0;
 }
 
 h5 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin: 0.5em 0;
 }
 
 h6 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0.5em 0;
 }
 
@@ -68,4 +68,23 @@ a.link-disable {
   }
   color: $links-disable-color;
   pointer-events: none;
+}
+
+#ddtReactCourse {
+  margin-bottom: 0;
+}
+
+#ddtReactCourse + span {
+  color: #f0a71b;
+  background-color: #204ba0;
+  padding: 6px 5px;
+}
+
+.tag {
+  color: #204ba0;
+}
+
+.cross {
+  text-decoration: line-through;
+  text-decoration-color: red;
 }
