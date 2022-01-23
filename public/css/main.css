@@ -187,9 +187,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -197,9 +197,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -208,9 +208,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -260,8 +260,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -271,8 +271,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -280,7 +280,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -290,7 +290,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type='search']::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -414,6 +414,20 @@ main {
   padding: 1em 0.5em;
 }
 
+.vanille-ul {
+  margin-left: 1.2em;
+}
+.vanille-ul li {
+  list-style-type: disc;
+}
+
+.indented-list {
+  margin-left: 1.2em;
+}
+.indented-list li {
+  margin: 0.2em 0;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -471,7 +485,7 @@ a:active {
 }
 
 a.link-to-main {
-  background-image: url('./../img/arrow-left.svg');
+  background-image: url("./../img/arrow-left.svg");
   background-size: 1.1em;
   background-repeat: no-repeat;
   background-position: center left;
@@ -514,6 +528,15 @@ header {
   padding: 1em;
 }
 
+.react-members-list li {
+  display: flex;
+  max-width: 20em;
+  width: 100%;
+  justify-content: space-between;
+  border: 2px solid #747474;
+  padding: 0.3em;
+}
+
 .react-members {
   border-spacing: 0;
   border: 0.15em solid #747474;
@@ -543,21 +566,15 @@ header {
   padding: 0.2em;
   background-color: #6bb2ff;
   border-radius: 0.2em;
+  border-radius: 0.2em;
+  border-radius: 0.2em;
 }
 .copyButton:hover {
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
 .copyButton:active {
   background-color: #2990ff;
-}
-
-.tech {
-  margin-left: 2rem;
-}
-
-.tech li {
-  list-style: circle;
 }
 
 /*# sourceMappingURL=main.css.map */
