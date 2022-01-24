@@ -414,20 +414,6 @@ main {
   padding: 1em 0.5em;
 }
 
-.vanille-ul {
-  margin-left: 1.2em;
-}
-.vanille-ul li {
-  list-style-type: disc;
-}
-
-.indented-list {
-  margin-left: 1.2em;
-}
-.indented-list li {
-  margin: 0.2em 0;
-}
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -566,15 +552,20 @@ header {
   padding: 0.2em;
   background-color: #6bb2ff;
   border-radius: 0.2em;
-  border-radius: 0.2em;
-  border-radius: 0.2em;
 }
 .copyButton:hover {
-  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
 .copyButton:active {
   background-color: #2990ff;
+}
+
+.tech {
+  margin-left: 2rem;
+}
+.tech li {
+  list-style: circle;
 }
 
 /*# sourceMappingURL=main.css.map */
