@@ -1,7 +1,10 @@
-.idea
-.DS_Store
 node_modules
+.idea
+/node_modules/*
+.DS_Store
+.vscode
 build
+public
 dist
 .cache
 package-lock.json
