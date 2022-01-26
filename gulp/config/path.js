@@ -13,7 +13,8 @@ export const path = {
     html: `${buildFolder}/`,
     images: `${buildFolder}/img/`,
     fonts: `${buildFolder}/fonts/`,
-    files: `${buildFolder}/files/`
+    files: `${buildFolder}/files/`,
+    adminHtml: `${buildFolder}/admin/`
   },
   src: {
     js: `${srcFolder}/js/**/*.js`,
@@ -22,7 +23,8 @@ export const path = {
     scss: `${srcFolder}/scss/**/[^_]*.scss`,
     html: `${srcFolder}/**/[^_]*.html`,
     fonts: `${srcFolder}/fonts/**/*.*`,
-    files: `${srcFolder}/files/**/*.*`
+    files: `${srcFolder}/files/**/*.*`,
+    adminHtml: `${srcFolder}/admin/**/[^_]*.html`
   },
   watch: {
     js: `${srcFolder}/js/**/*.js`,
@@ -30,7 +32,8 @@ export const path = {
     html: `${srcFolder}/**/*.html`,
     images: `${srcFolder}/img/**/*.{png,jpg,jpeg,gif,svg,webp,JPG,PNG}`,
     fonts: `${srcFolder}/fonts/**/*.*`,
-    files: `${srcFolder}/files/**/*.*`
+    files: `${srcFolder}/files/**/*.*`,
+    adminHtml: `${srcFolder}/admin/**/*.html`
   },
   clean: buildFolder,
   buildFolder: buildFolder,
