@@ -1,14 +1,10 @@
-# website
-our main website
-
-Compile SCSS:  
-npx sass scss/:public/css/
+# dreamdev.team
 
 
-Format code with Prettier:  
-npx prettier --write .
+## Запуск проекта:  
+Запустить сервер с автоматической сборкой: npm start  
+Запустить сборку для продакшена: npm run build  
+Запустить сервер для превью: npm run preview  
 
-
-Dependencies:
-sass
-prettier
+## Форматирование  
+Отформатировать код в директории src: npm run format  
