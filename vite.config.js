@@ -1,5 +1,4 @@
 import path from 'path';
-import fs from 'fs';
 
 global.__dirname = process.cwd();
 
