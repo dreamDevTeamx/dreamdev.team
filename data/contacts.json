@@ -1,0 +1,51 @@
+[
+  {
+    "fullName": "Наталья Николаева",
+    "github": "Altha250",
+    "mail": "natalia.nikolaeva2012@bk.ru",
+    "telegram": "sonic250",
+    "ignore": true
+  },
+  {
+    "fullName": "Сергей Киринцев",
+    "github": "SergeyKirintsev",
+    "mail": "kserg80@gmail.com",
+    "telegram": "kirSerJS",
+    "ignore": false
+  },
+  {
+    "fullName": "Александр Сердюк",
+    "github": "AlexSerdyuk83",
+    "mail": "av.serdyuk@protonmail.com",
+    "telegram": "iamsavs",
+    "ignore": true
+  },
+  {
+    "fullName": "Иван Музыка",
+    "github": "SeryiBaran",
+    "mail": "seryibaranminepy@yandex.ru",
+    "telegram": "ivanchai6iv",
+    "ignore": false
+  },
+  {
+    "fullName": "Николай Пивкин",
+    "github": "NickMash37",
+    "mail": "nick.mash37@gmail.com",
+    "telegram": "nickmash_11",
+    "ignore": true
+  },
+  {
+    "fullName": "Амир Абохссан",
+    "github": "a-abokhssan",
+    "mail": "a.abokhssan@gmail.com",
+    "telegram": "a_abokhssan",
+    "ignore": true
+  },
+  {
+    "fullName": "Раушан Каримов",
+    "github": "nashuarone",
+    "mail": "rashnktp@yandex.ru",
+    "telegram": "nashuar",
+    "ignore": true
+  }
+]

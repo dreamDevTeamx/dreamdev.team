@@ -1,25 +1,47 @@
-const linksForCopy = document.querySelectorAll('.link_for_copy');
+import { copyToClipboard } from './utils.js';
 
-// TODO: try to simplify in future
-const linksForCopyFunc = 'copyToClipboard(this.previousElementSibling.href)';
-const emailsForCopyFunc =
-  "copyToClipboard(this.previousElementSibling.href.replace('mailto:', ''))";
+const membersTable = document.querySelector('.react-members');
 
-for (let i = 0; i < linksForCopy.length; i++) {
-  const isLinkEmail = linksForCopy[i].getAttribute('href').indexOf('mailto:') != -1;
-  linksForCopy[i].insertAdjacentHTML(
-    'afterEnd',
-    '<button class="copyButton" onclick="' +
-      ((isLinkEmail && emailsForCopyFunc) || (!isLinkEmail && linksForCopyFunc)) +
-      '">Copy</button>'
-  );
-}
+const copyButton = `<button class="copyButton">Copy</button>`;
 
-function copyToClipboard(textForCopy) {
-  let tempInput = document.createElement('input');
-  tempInput.setAttribute('value', textForCopy);
-  document.body.appendChild(tempInput);
-  tempInput.select();
-  document.execCommand('copy');
-  document.body.removeChild(tempInput);
-}
+fetch('/data/contacts.json')
+  .then(res => res.json())
+  .then(data => {
+    membersTable.innerHTML = data
+      .filter(member => !member.ignore)
+      .map(elem => {
+        return `
+<tr>
+  <td><div class="inner-container-table-cell">${elem.fullName}</div></td>
+  <td>
+    <div class="inner-container-table-cell">
+      <a href="https://github.com/${elem.github}" target="_blank"
+        >${elem.github}</a
+      >
+      ${copyButton}
+    </div>
+  </td>
+  <td>
+    <div class="inner-container-table-cell">
+      <a href="mailto:${elem.mail}">${elem.mail}</a>
+      ${copyButton}
+    </div>
+  </td>
+  <td>
+    <div class="inner-container-table-cell">
+      <a href="https://t.me/${elem.telegram}" target="_blank">${elem.telegram}</a>
+      ${copyButton}
+    </div>
+  </td>
+</tr>
+        `;
+      })
+      .join('');
+    document.querySelectorAll('.copyButton').forEach(button => {
+      button.addEventListener('click', function () {
+        let href = this.previousElementSibling.href;
+        if (href.includes('mailto:')) href = href.replace('mailto:', '');
+        copyToClipboard(href);
+      });
+    });
+  });
