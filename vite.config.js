@@ -8,7 +8,7 @@ const configObject = {
     rollupOptions: {
       input: {
         main: path.join(__dirname, 'index.html'),
-        admin: path.join(__dirname, 'admin/index.html'),
+        contacts: path.join(__dirname, 'admin/contacts.html'),
       },
     },
   },
