@@ -1,0 +1,11 @@
+dreamdev.team {
+  # Set this path to your site's directory.
+  root * /usr/share/caddy
+
+  # Enable the static file server.
+  file_server
+
+  basicauth /admin/* {
+    admin $2a$14$gYKyTNO5Fvx4qaJbLHfRduTs.CZM28mQyJg1mGafEgeUAHhfKGAsi
+  }
+}

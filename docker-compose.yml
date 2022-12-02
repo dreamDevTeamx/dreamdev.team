@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  build:
+    build:
+      context: .
+      dockerfile: docker/build.Dockerfile
+    volumes:
+      - builded_app:/app/dist
+    container_name: build
+
+  server:
+    image: caddy:alpine
+    restart: on-failure
+    depends_on:
+      build:
+        condition: service_completed_successfully
+    volumes:
+      - builded_app:/usr/share/caddy
+      - caddy_data:/data
+      - ./data:/usr/share/caddy/data
+      - ./docker/Caddyfile:/etc/caddy/Caddyfile
+    ports:
+      - 80:80
+    container_name: server
+
+volumes:
+  builded_app:
+  caddy_data:
