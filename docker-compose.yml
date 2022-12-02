@@ -18,12 +18,14 @@ services:
     volumes:
       - builded_app:/usr/share/caddy
       - caddy_data:/data
+      - caddy_config:/config
       - ./data:/usr/share/caddy/data
       - ./docker/Caddyfile:/etc/caddy/Caddyfile
     ports:
-      - 80:80
+      - 443:443
     container_name: server
 
 volumes:
   builded_app:
   caddy_data:
+  caddy_config:
