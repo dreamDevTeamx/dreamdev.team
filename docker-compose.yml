@@ -23,6 +23,7 @@ services:
       - ./docker/Caddyfile:/etc/caddy/Caddyfile
     ports:
       - 443:443
+      - 80:80
     container_name: server
 
 volumes:
