@@ -9,3 +9,11 @@
 ## Форматирование
 
 Отформатировать код в директории src: `npm run format`
+
+### Пример caddy_setting.env
+
+```
+HOST=dreamdev.team
+CADDY_TLS_TYPE=internal # самоподписанные сертификаты
+CADDY_TLS_TYPE=email@mail.ru # Let's encrypt сертификаты
+```

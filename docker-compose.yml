@@ -24,6 +24,8 @@ services:
     ports:
       - 443:443
       - 80:80
+    env_file:
+      - caddy_settings.env
     container_name: server
 
 volumes:

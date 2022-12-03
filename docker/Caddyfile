@@ -1,4 +1,4 @@
-dreamdev.team {
+{$HOST} {
   # Set this path to your site's directory.
   root * /usr/share/caddy
 
@@ -8,4 +8,6 @@ dreamdev.team {
   basicauth /admin/* {
     admin $2a$14$gYKyTNO5Fvx4qaJbLHfRduTs.CZM28mQyJg1mGafEgeUAHhfKGAsi
   }
+
+  tls {$CADDY_TLS_TYPE}
 }
